@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #AFB8C7;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #539EB3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    min-height: auto;
+    width: 100%;
+}
+
+.image {
+    flex: 1;
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+}
+
+.image img {
+    width: 100%;
+    min-height: auto;
+
+}
+
+/* FORM */
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 38px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+hr {
+    width: 300px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+}
+
+.form {
+    flex: 1;
+    padding: 20px;
+    align-items: center;
+}
+
+form {
+    max-width: 250px;
+    margin: 0 auto;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    background-color: white;
+    color: #539EB3;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

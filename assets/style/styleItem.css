@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #3f5865;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+/* START SIDEBAR */
+.sidebar {
+    height: 94.5%;
+    width: 200px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    margin: 18px;
+    border-radius: 20px;
+    background-color: #111a20;
+}
+
+.logo_app {
+    display: flex;
+    justify-content: center;
+}
+
+.text_logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 40%;
+    height: 40%;
+}
+
+a {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    padding: 5px;
+    margin: 7px 12px;
+    align-items: center;
+}
+
+.material-icons {
+    font-size: 25px !important;
+    margin-left: 10%;
+    color: white;
+}
+
+li .nav-name {
+    margin-left: 15%;
+    text-align: left;
+}
+
+a:hover {
+    background-color: #363d42;
+    border-radius: 10px;
+}
+/* END SIDEBAR */
+
+/* START CONTENT */
+.content-container {
+    flex: 1;
+    margin: 10px 15px 10px 0;
+}
+
+/* JUDUL */
+.header {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* DISPLAY ADD */
+.controller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* BUTTON ADD */
+.button-add {
+    padding: 10px 7px;
+    margin: 0;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #17242c;
+}
+
+.button-add:hover {
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #17140c;
+}
+/* END DISPLAY ADD*/
+/* END DISPLAY ADD*/
+
+/* START TABLE */
+.outer-wrapper {
+    margin: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px white;
+    max-width: 100%;
+    height: 450px; /* Height table */
+}
+
+.table-wrapper {
+    max-height: 400px;
+    margin: 25px;
+    overflow-y: auto;
+    border: 1px solid white;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* TABLE HEAD */
+table th {
+    position: sticky;
+    top: 0;
+    background-color: #17242c;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    outline: 1px solid white;
+    height: 45px;
+}
+
+/* TABLE BODY */
+table td {
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid rgb(177, 177, 177);
+    color: white;
+}
+
+/* TABLE HEAD CHANGE */
+table th.change {
+    width: 200px;
+}
+
+.button-control {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    width: 200px;
+}
+
+/* BUTTON EDIT */
+.button-edit {
+    padding: 3px 15px;
+    margin: 3px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: blue;
+    font-size: 12px;
+}
+
+.button-edit:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: darkblue;
+}
+/* END BUTTON EDIT */
+
+/* BUTTON DELETE */
+.button-delete {
+    padding: 3px 6px;
+    margin: 3px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: red;
+    font-size: 12px;
+}
+
+.button-delete:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: darkred;
+}
+/* END BUTTON DELETE*/
+/* END TABLE */
+
+/* POP UP */
+.popup-add,
+.popup-edit {
+    width: 81.5%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+    color: white;
+}
+
+.popup-content {
+    height: max-content;
+    width: max-content;
+    background: #363d42;
+    padding: 20px 60px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.popup-content h1 {
+    color: white;
+}
+
+.input-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 70%;
+    height: 30px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+.button-form {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.btn-close {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    height: 40px;
+    width: 73px;
+    color: #fff;
+    cursor: pointer;
+    background-color: forestgreen;
+    border-radius: 5px;
+}
+
+.btn-close:hover {
+    background-color: darkred;
+    border-radius: 5px;
+}
+
+.btn-submit:hover {
+    background-color: darkgreen;
+    border-radius: 5px;
+}
+/* END CONTENT */
+
+/* LOG OUT */
+.btn-logout:hover {
+    background-color: red;
+}
+/* END LOG OUT */

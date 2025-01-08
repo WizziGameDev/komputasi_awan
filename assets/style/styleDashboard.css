@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #3f5865;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* START SIDEBAR */
+.sidebar {
+    height: 94.5%;
+    width: 200px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    margin: 18px;
+    border-radius: 20px;
+    background-color: #111a20;
+    position: fixed;
+}
+
+.logo_app {
+    display: flex;
+    justify-content: center;
+}
+
+.text_logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 40%;
+    height: 40%;
+}
+
+a {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    padding: 5px;
+    margin: 7px 12px;
+    align-items: center;
+}
+
+.material-icons {
+    font-size: 25px !important;
+    margin-left: 10%;
+    color: white;
+}
+
+li .nav-name {
+    margin-left: 15%;
+    text-align: left;
+}
+
+a:hover {
+    background-color: #363d42;
+    border-radius: 10px;
+}
+/* END SIDEBAR */
+
+/* START CONTENT */
+.content-container {
+    flex: 1;
+    margin: 10px 15px 10px 0;
+}
+.home-section {
+    position: relative;
+    background: #3f5865;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+    transition: all 0.5s ease;
+}
+
+.home-section nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: #17242c;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    border-radius: 18px;
+    left: 240px;
+    padding: 0 20px;
+    margin-top: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.dashboard {
+    margin-left: 10px;
+}
+
+.home-section nav .sidebar-button {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 200px;
+}
+
+.home-section .home-content {
+    position: relative;
+    padding-top: 104px;
+}
+
+/* COUNT */
+.home-content .overview-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-top: 14px;
+    margin-bottom: 28px;
+    margin-right: 7px;
+}
+
+.overview-boxes .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% / 4 - 15px);
+    background: #17242c;
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overview-boxes .box-topic {
+    font-size: 20px;
+}
+
+.home-content .box .number {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.home-content .box .cart {
+    display: inline-block;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.home-content .box .cart.one {
+    color: #66b0ff;
+    background: #cce5ff;
+}
+
+.home-content .box .cart.two {
+    color: #2bd47d;
+    background: #c0f2d8;
+}
+
+.home-content .box .cart.three {
+    color: #ffc233;
+    background: #ffe8b3;
+}
+
+.home-content .box .cart.four {
+    color: #e05260;
+    background: #f7d4d7;
+}
+
+.home-content .total-order {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home-content .sales-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left box */
+.sales-boxes,
+.purchase-boxes {
+    display: flex;
+    flex-direction: column;
+    max-width: 95.5%;
+    height: 180px;
+    background: #17242c;
+    padding: 20px 30px;
+    margin: 0 27px 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-wrapper {
+    max-height: fit-content;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* TABLE HEAD */
+table th {
+    position: sticky;
+    top: 0;
+    background-color: #17242c;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    height: 35px;
+}
+
+/* TABLE BODY */
+table td {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    height: 20px;
+}
+
+.purchase-boxes {
+    margin-top: 28px;
+}
+/* END TABLE */
+/* END CONTENT */
+
+/* LOG OUT */
+.btn-logout:hover {
+    background-color: red;
+}
+/* END LOG OUT */

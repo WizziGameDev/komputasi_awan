@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #3F5865;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    color: white;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container-sale {
+    display: flex;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.item {
+    width: 70%;
+}
+
+.outer-wrapper {
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px white;
+    max-width: 100%;
+    height: 95%;
+    padding: 10px 25px;
+}
+
+.outer-wrapper h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.table-wrapper {
+    max-height: 85%;
+    overflow-y: auto;
+    border: 1px solid white;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* TABLE HEAD */
+table th {
+    position: sticky;
+    top: 0;
+    background-color: #17242C;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    outline: 1px solid white;
+    height: 35px;
+}
+
+/* TABLE BODY */
+table td {
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid rgb(177, 177, 177);
+    color: white;
+}
+
+/* ACTIONS */
+.td-quantity {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+
+.min, .plus {
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.min {
+    width: 40px;
+    height: 20px;
+    background-color: red;
+}
+
+.min:hover {
+    background-color: darkred;
+}
+
+.plus {
+    width: 40px;
+    height: 20px;
+    background-color: forestgreen;
+}
+
+.plus:hover {
+    background-color: darkgreen;
+}
+/* END TABLE */
+
+/* ITEM SALE */
+.item-sale {
+    width: 34%;
+    height: 95%;
+    margin: 10px 0 0 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.item-sale h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* TOTAL */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.submit {
+    width: 32%;
+}
+
+.input-form {
+    padding-top: 5px;
+}
+
+.input-form input {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: 64%;
+    color: white;
+    background-color: #2B3B45;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+
+.button-close {
+    padding: 3px 8px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: red;
+    font-size: 18px;
+}
+
+.button-close:hover {
+    background-color: darkred;
+}
+
+.button-submit {
+    padding: 3px 6px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: forestgreen;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.button-submit:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
